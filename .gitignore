@@ -1,0 +1,7 @@
+# MkDocs build output; GitHub Pages builds this from docs/ on main.
+site/
+
+# Local Python/editor state
+.venv/
+__pycache__/
+.DS_Store
