@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Evidence-first public guidance for identity-fraud response and research.">
-  <title>Credit freezes and fraud alerts | Identity Fraud Knowledge Base</title>
+  <title>Decision tree: should you buy identity-theft insurance? | Identity Fraud Knowledge Base</title>
   <style>
     :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1f2937; background: #f8fafc; }
     body { margin: 0; line-height: 1.6; }
@@ -33,48 +33,44 @@
 <a href="../research/reviews-and-service.html">Review lens</a>
 <a href="../research/sources.html">Sources</a>
 <a href="../research/paid-products.html">Paid products</a></nav>
-  <main><h1 id="credit-freezes-and-fraud-alerts">Credit freezes and fraud alerts</h1>
-<p>Both are free protections for a consumer’s credit file. They are distinct from
-commercial credit locks.</p>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>What it does</th>
-<th>Key limit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Security freeze</td>
-<td>Blocks prospective creditors from accessing the credit file.</td>
-<td>It can also delay the consumer’s own new-credit application until lifted, and it does not stop every type of fraud.</td>
-</tr>
-<tr>
-<td>Fraud alert</td>
-<td>Tells creditors checking the file to take steps to verify identity.</td>
-<td>It does not block a creditor from opening credit after verification.</td>
-</tr>
-<tr>
-<td>Credit monitoring</td>
-<td>Sends alerts about monitored changes.</td>
-<td>It is detection, not prevention.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="security-freezes">Security freezes</h2>
-<p>The CFPB says a freeze is free and must be placed with <strong>Equifax, Experian, and
-TransUnion separately</strong>. It does not change a credit score. Existing creditors
-and certain government entities may still access the file. See the CFPB’s
-<a href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-freeze-or-security-freeze-on-my-credit-report-en-1341/">security-freeze guide</a>.</p>
-<h2 id="fraud-alerts">Fraud alerts</h2>
-<p>An initial alert can last up to one year unless removed earlier. CFPB says an
-extended alert, available with an identity-theft report, lasts seven years.
-Contacting one nationwide bureau to place an alert triggers notice to the other
-two. See the CFPB’s <a href="https://www.consumerfinance.gov/ask-cfpb/what-do-i-do-if-i-think-i-have-been-a-victim-of-identity-theft-en-31/">identity-theft response guide</a>.</p>
-<p>For a fraudulent item already appearing in a credit report, a separate federal
-process may allow a request to block identity-theft information. The facts and
-required documentation matter; read <a href="https://consumer.ftc.gov/system/files/consumer_ftc_gov/pdf/fcra-605b.pdf">FCRA § 605B</a> and use IdentityTheft.gov’s tailored steps.</p></main>
+  <main><h1 id="decision-tree-should-you-buy-identity-theft-insurance">Decision tree: should you buy identity-theft insurance?</h1>
+<p>This flow is a buying framework, not a coverage determination. Stop and obtain
+the actual certificate/policy whenever the answer turns on an exclusion,
+deadline, state, or a known incident.</p>
+<div class="mermaid">flowchart TD
+    A[Start: review accounts and credit reports] --&gt; B{Known suspicious activity?}
+    B --&gt;|Yes| C[Report to affected institution and IdentityTheft.gov]
+    C --&gt; D[Ask provider in writing about pre-enrollment restoration and insurance]
+    D --&gt; E{Written answer covers the fact pattern?}
+    E --&gt;|No / unclear| F[Do not buy for that existing event; use free recovery tools and seek qualified advice if needed]
+    E --&gt;|Yes| G[Compare exact certificate, deadlines, and limits]
+    B --&gt;|No| H[Freeze credit files; enable account alerts and MFA]
+    H --&gt; I{Existing employer, bank, card, or home-policy benefit?}
+    I --&gt;|Yes| J[Read the benefit and other-insurance clause]
+    I --&gt;|No| K[Compare paid plans only for desired restoration and verified eligible losses]
+    J --&gt; K
+    G --&gt; L{Value comes from verified terms or restoration help?}
+    K --&gt; L
+    L --&gt;|No| M[Use free controls and revisit later]
+    L --&gt;|Yes| N[Buy only after saving policy, price, renewal, and cancellation terms]
+</div>
+<h2 id="the-decision-hinges-on-four-questions">The decision hinges on four questions</h2>
+<ol>
+<li><strong>Is this protection for a future event or an existing problem?</strong> A new
+   subscription may not cover an event already discovered.</li>
+<li><strong>What cannot be recovered elsewhere?</strong> Banks, card issuers, employers, and
+   home-policy endorsements may be primary or duplicate sources of help.</li>
+<li><strong>What service is being purchased?</strong> Monitoring, hands-on restoration, and
+   insurance reimbursement are different products.</li>
+<li><strong>Can the insurer prove the loss is covered?</strong> Read notice, proof, consent,
+   other-insurance, and deadline provisions before paying.</li>
+</ol>
+<blockquote>
+<p><strong>Evidence note:</strong> FTC and CFPB describe free freezes, reports, fraud alerts,
+and IdentityTheft.gov recovery tools. Those controls are the starting point,
+not an add-on after buying a subscription.</p>
+</blockquote>
+<p>See <a href="insurance-checklist.html">Insurance checklist</a> and the <a href="../research/identity-theft-insurance.html">insurance encyclopedia</a>.</p></main>
   <footer>General information only — not legal, tax, insurance, or financial advice.</footer>
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
